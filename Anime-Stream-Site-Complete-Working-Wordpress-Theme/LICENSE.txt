@@ -1,0 +1,5 @@
+License: GPLv2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+
+This theme is licensed under the GNU General Public License v2 or later.
+You are free to use, modify, and distribute this theme under the same license.

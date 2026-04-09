@@ -1,0 +1,281 @@
+/*
+Theme Name: Anime Flow
+Theme Preview:https://youtu.be/CNuUaRmnO_g?si=0ueLd4GXgEMSwSqA
+Author: Rahul Panchanan Mandal
+Description: A custom WordPress theme designed for anime stream and creative websites.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Tags: anime, blog, responsive, custom-theme
+*/
+
+/* 🌌 Background */
+
+
+header h1 {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #ffe259;
+  letter-spacing: 1px;
+  margin: 0;
+  text-shadow:
+    2px 2px 0 #000,
+    4px 4px 10px rgba(0,0,0,0.6);
+}
+p, main, body {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.15rem; /* बड़ा दिखेगा */
+  line-height: 1.7;
+}
+/* Pages content के लिए छोटा neat font */
+.page-content,
+.entry-content,
+main p,
+p {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.92rem;    /* छोटा और clean */
+  line-height: 1.55;
+  color: #e6e6e6;
+}
+small, .small-text {
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #0a0418;
+  color: #fff;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* 🔝 Header Logo Section */
+header {
+  text-align: center;
+  padding: 30px 15px 10px;
+}
+
+header h1 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: #ffeb3b;
+  letter-spacing: 1px;
+  margin: 0;
+  text-shadow: 0px 3px 4px rgba(0,0,0,0.4);
+}
+
+/* 🧭 Navigation */
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 22px;
+  margin-top: 12px;
+  padding: 0 10px;
+}
+
+nav a {
+  font-size: 1rem;
+  color: #ddd;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #ffeb3b;
+}
+
+/* 🔍 Search Box */
+.search-bar {
+  text-align: center;
+  margin: 25px 0;
+  width: 100%;
+}
+
+.search-bar input {
+  width: 92%;
+  max-width: 500px;
+  padding: 12px 18px 12px 44px;
+  border-radius: 8px;
+  border: none;
+  background: #ffffff;
+  color: #000;
+  font-size: 1rem;
+
+  background-image: url("https://img.icons8.com/ios-filled/50/search--v1.png");
+  background-size: 20px;
+  background-position: 12px center;
+  background-repeat: no-repeat;
+
+  box-shadow: 0px 2px 10px rgba(0,0,0,0.2);
+}
+
+/* 🟣 Purple Button */
+.visit-button {
+  display: block;
+  margin: 20px auto;
+  padding: 14px 25px;
+  font-size: 1.1rem;
+  background: #7c3aed;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  max-width: 260px;
+  text-align: center;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  transition: 0.3s ease;
+}
+
+.visit-button:hover {
+  background: #5b21b6;
+}
+
+/* ✨ Main Content */
+main {
+  max-width: 740px;
+  margin: auto;
+  padding: 20px 18px;
+  line-height: 1.65;
+  font-size: 1rem;
+}
+
+main h2 {
+  color: #ffeb3b;
+  font-size: 1.6rem;
+  margin-bottom: 12px;
+}
+
+/* 🦶 Footer */
+footer {
+  text-align: center;
+  padding: 25px;
+  color: #aaa;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 0 10px;
+}
+
+.footer-links a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.footer-links a:hover {
+  color: #ffeb3b;
+}
+
+/* 📱 Perfect Mobile Design */
+@media (max-width: 600px) {
+
+  header {
+    padding: 25px 10px 5px;
+  }
+
+  header h1 {
+    font-size: 2.2rem;
+  }
+
+  nav {
+    gap: 15px;
+  }
+
+  nav a {
+    font-size: 0.95rem;
+  }
+
+  .search-bar input {
+    width: 90%;
+    font-size: 0.95rem;
+  }
+
+  .visit-button {
+    width: 85%;
+    font-size: 1rem;
+    padding: 12px;
+  }
+
+  main {
+    padding: 15px 14px;
+    font-size: 0.95rem;
+  }
+
+  main h2 {
+    font-size: 1.4rem;
+  }
+
+}
+
+/* 📲 Tablet */
+@media (min-width: 601px) and (max-width: 900px) {
+  header h1 {
+    font-size: 2.4rem;
+  }
+
+  .search-bar input {
+    width: 85%;
+  }
+}
+/* 🛠 Fix: Remove unwanted margins on mobile */
+body, html {
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* 🛠 Make ALL wrappers full-width */
+.container,
+#primary,
+.content-area,
+.site-main,
+.wrapper,
+.page-content {
+  max-width: 100% !important;
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* 🛠 Remove WordPress theme side padding */
+.entry-content,
+.site-content {
+  margin: 0 !important;
+  padding: 0 0 !important;
+}
+
+/* 🛠 Fix unexpected left/right gap */
+* {
+  box-sizing: border-box;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden !important;
+}
+.container, .wrapper, .site, .content-area, .site-main {
+  max-width: 100% !important;
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+header {
+  width: 100% !important;
+  display: block;
+  text-align: center !important;
+  margin: 0 auto !important;
+  padding: 50px 15px 10px;
+  overflow: hidden;
+}
+
+
